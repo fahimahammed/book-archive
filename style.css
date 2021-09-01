@@ -1,0 +1,19 @@
+.form-style{
+    background-color:rgba(4, 53, 8, 0.329);
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+}
+.btn{
+    border-radius: 1.5rem;
+    padding: 9px 20px;
+}
+.search-box{
+    position: relative;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
