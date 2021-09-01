@@ -11,9 +11,14 @@ const searchBook = () => {
 const randerData = (data) => {
     
     const booksContainer = document.getElementById('books-container');
+    const searchText = document.getElementById('search-field').value;
     booksContainer.className = 'row';
-    
-    document.getElementById("result-num").innerHTML = `<h6>${data.length} num</h6>`;
+    const warning = document.getElementById("result-num");
+    warning.innerHTML = `<h6>${data.length} num</h6>`;
+
+    if(data.length === 0){
+        warning.innerHTML = `<h6>Your search ${searchText} was not found on any pages.</h6>`
+    }
 
     booksContainer.innerHTML = '';
 
