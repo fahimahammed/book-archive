@@ -32,8 +32,6 @@ const randerData = (data) => {
         element.publisher ? bookPublisher = element.publisher[0] : "N/A";
         
 
-        element.cover_i && console.log(element.cover_i);
-
         const bookDiv = document.createElement('div');
         const authorDiv = document.createElement('ul');
         bookDiv.className = "col-md-4";
