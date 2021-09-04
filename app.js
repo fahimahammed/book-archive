@@ -6,8 +6,6 @@ const searchBook = () => {
     .then(data => randerData(data.docs));
 }
 
-
-
 const randerData = (data) => {
     
     const booksContainer = document.getElementById('books-container');
@@ -31,7 +29,6 @@ const randerData = (data) => {
         element.publish_year ? publishYear = element.publish_year[0] : "N/A";
         element.publisher ? bookPublisher = element.publisher[0] : "N/A";
         
-
         const bookDiv = document.createElement('div');
         const authorDiv = document.createElement('ul');
         bookDiv.className = "col-md-4";
@@ -50,9 +47,6 @@ const randerData = (data) => {
         }) : "";
         bookDiv.appendChild(authorDiv);
         booksContainer.appendChild(bookDiv);
-        document.getElementById('search-field').value = "";
-        
-        
+        document.getElementById('search-field').value = "";  
     });
-    
 }
